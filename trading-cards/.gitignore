@@ -1,0 +1,2 @@
+# Rasterized output is large/binary — regenerate with `--png`.
+out/*.png
