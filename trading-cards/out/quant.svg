@@ -1,144 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="924" viewBox="0 0 660 924">
-  <defs>
-    <linearGradient id="g-quant" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0" stop-color="#060c1c"/>
-      <stop offset="1" stop-color="#16356e"/>
-    </linearGradient>
-    <radialGradient id="s-quant" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#5aa8ff" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#5aa8ff" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- card body -->
-  <rect x="6" y="6" width="648" height="912" rx="34" fill="url(#g-quant)"/>
-  <rect x="6" y="6" width="648" height="912" rx="34"
-        fill="none" stroke="#5aa8ff" stroke-opacity="0.6" stroke-width="2.5"/>
-  <rect x="18" y="18" width="624" height="888" rx="26"
-        fill="none" stroke="#eef4ff" stroke-opacity="0.10" stroke-width="1"/>
-
-  <!-- sigil glow + glyph -->
-  <circle cx="92" cy="98" r="70" fill="url(#s-quant)"/>
-  <text x="48" y="124" font-size="74">🤖</text>
+  <!-- page -->
+  <rect width="660" height="924" rx="28" fill="#181A20"/>
+  <!-- card surface -->
+  <rect x="8" y="8" width="644" height="908" rx="22" fill="#1E2026"/>
+  <!-- top brand accent -->
+  <rect x="8" y="8" width="644" height="5" rx="2.5" fill="#FCD535"/>
 
   
-    <g transform="translate(482,40)">
-      <rect width="132" height="30" rx="15" fill="#5aa8ff" fill-opacity="0.18"
-            stroke="#5aa8ff" stroke-width="1.4"/>
-      <text x="66" y="20" text-anchor="middle"
-            font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="13"
-            font-weight="800" letter-spacing="2" fill="#eef4ff">EPIC</text>
+    <circle cx="70" cy="84" r="30" fill="#2B3139"/>
+    <circle cx="70" cy="84" r="30" fill="none" stroke="#FCD535" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="70" y="98" text-anchor="middle" font-size="34">🤖</text>
+
+    <text x="116" y="78" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="700" fill="#EAECEF">QNT<tspan fill="#848E9C" font-weight="500">/USDT</tspan></text>
+    <text x="116" y="102" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Epic · Persona</text>
+
+    <g transform="translate(516,60)">
+      <rect width="104" height="34" rx="6" fill="#0ECB81" fill-opacity="0.16"/>
+      <text x="52" y="23" text-anchor="middle" font-family="'DejaVu Sans Mono',monospace" font-size="16" font-weight="700" fill="#0ECB81">+1.32%</text>
     </g>
-
-  <!-- name + tagline -->
-  <text x="46" y="196" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-        font-size="38" font-weight="800" fill="#eef4ff">The Quant</text>
-  <text x="46" y="228" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-        font-size="18" font-weight="500" fill="#a8c4ef">Trust the model, not the mood</text>
-  <line x1="46" y1="248" x2="614" y2="248"
-        stroke="#5aa8ff" stroke-opacity="0.4" stroke-width="1.5"/>
-
+    <text x="620" y="112" text-anchor="end" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="12" fill="#848E9C">24h Change</text>
   
-        <g transform="translate(46,370)">
-          <rect width="112" height="34" rx="17"
-                fill="#5aa8ff" fill-opacity="0.14"
-                stroke="#5aa8ff" stroke-opacity="0.55" stroke-width="1.2"/>
-          <text x="56" y="22" text-anchor="middle"
-                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
-                font-weight="600" fill="#eef4ff">Systematic</text>
+    <text x="40" y="164" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" fill="#EAECEF">The Quant</text>
+    <text x="40" y="192" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="500" fill="#848E9C">Trust the model, not the mood</text>
+  
+    <rect x="40" y="212" width="580" height="148" rx="10" fill="#181A20"/>
+    <rect x="40" y="212" width="580" height="148" rx="10" fill="none" stroke="#2B3139" stroke-width="1"/>
+    
+      <line x1="73.7" y1="268.0" x2="73.7" y2="292.4" stroke="#0ECB81" stroke-width="1.3"/>
+      <rect x="62.7" y="274.8" width="22.1" height="11.2" rx="1" fill="#0ECB81"/>
+      <line x1="113.1" y1="269.9" x2="113.1" y2="282.2" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="102.1" y="274.8" width="22.1" height="4.7" rx="1" fill="#F6465D"/>
+      <line x1="152.6" y1="273.5" x2="152.6" y2="290.6" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="141.5" y="279.5" width="22.1" height="7.0" rx="1" fill="#F6465D"/>
+      <line x1="192.0" y1="274.8" x2="192.0" y2="294.0" stroke="#0ECB81" stroke-width="1.3"/>
+      <rect x="181.0" y="281.8" width="22.1" height="4.6" rx="1" fill="#0ECB81"/>
+      <line x1="231.4" y1="279.1" x2="231.4" y2="298.1" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="220.4" y="281.8" width="22.1" height="11.2" rx="1" fill="#F6465D"/>
+      <line x1="270.9" y1="272.8" x2="270.9" y2="294.2" stroke="#0ECB81" stroke-width="1.3"/>
+      <rect x="259.8" y="279.9" width="22.1" height="13.1" rx="1" fill="#0ECB81"/>
+      <line x1="310.3" y1="262.4" x2="310.3" y2="280.1" stroke="#0ECB81" stroke-width="1.3"/>
+      <rect x="299.2" y="267.2" width="22.1" height="12.7" rx="1" fill="#0ECB81"/>
+      <line x1="349.7" y1="260.1" x2="349.7" y2="274.0" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="338.7" y="267.2" width="22.1" height="3.2" rx="1" fill="#F6465D"/>
+      <line x1="389.1" y1="263.8" x2="389.1" y2="280.7" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="378.1" y="270.4" width="22.1" height="3.5" rx="1" fill="#F6465D"/>
+      <line x1="428.6" y1="272.2" x2="428.6" y2="290.1" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="417.5" y="273.9" width="22.1" height="11.5" rx="1" fill="#F6465D"/>
+      <line x1="468.0" y1="278.8" x2="468.0" y2="290.6" stroke="#0ECB81" stroke-width="1.3"/>
+      <rect x="457.0" y="282.3" width="22.1" height="3.2" rx="1" fill="#0ECB81"/>
+      <line x1="507.4" y1="282.2" x2="507.4" y2="290.9" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="496.4" y="282.3" width="22.1" height="2.0" rx="1" fill="#F6465D"/>
+      <line x1="546.9" y1="278.9" x2="546.9" y2="291.9" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="535.8" y="282.8" width="22.1" height="2.9" rx="1" fill="#F6465D"/>
+      <line x1="586.3" y1="284.5" x2="586.3" y2="295.3" stroke="#F6465D" stroke-width="1.3"/>
+      <rect x="575.2" y="285.7" width="22.1" height="2.7" rx="1" fill="#F6465D"/>
+  
+        <g transform="translate(40,386)">
+          <rect width="108" height="32" rx="6" fill="#2B3139"/>
+          <text x="54" y="21" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#EAECEF">Systematic</text>
         </g>
-        <g transform="translate(170,370)">
-          <rect width="112" height="34" rx="17"
-                fill="#5aa8ff" fill-opacity="0.14"
-                stroke="#5aa8ff" stroke-opacity="0.55" stroke-width="1.2"/>
-          <text x="56" y="22" text-anchor="middle"
-                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
-                font-weight="600" fill="#eef4ff">Backtested</text>
+        <g transform="translate(158,386)">
+          <rect width="108" height="32" rx="6" fill="#2B3139"/>
+          <text x="54" y="21" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#EAECEF">Backtested</text>
         </g>
-        <g transform="translate(294,370)">
-          <rect width="112" height="34" rx="17"
-                fill="#5aa8ff" fill-opacity="0.14"
-                stroke="#5aa8ff" stroke-opacity="0.55" stroke-width="1.2"/>
-          <text x="56" y="22" text-anchor="middle"
-                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
-                font-weight="600" fill="#eef4ff">No Emotion</text>
+        <g transform="translate(276,386)">
+          <rect width="108" height="32" rx="6" fill="#2B3139"/>
+          <text x="54" y="21" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#EAECEF">No Emotion</text>
         </g>
-        <g transform="translate(418,370)">
-          <rect width="154" height="34" rx="17"
-                fill="#5aa8ff" fill-opacity="0.14"
-                stroke="#5aa8ff" stroke-opacity="0.55" stroke-width="1.2"/>
-          <text x="77" y="22" text-anchor="middle"
-                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
-                font-weight="600" fill="#eef4ff">Edge in Numbers</text>
+        <g transform="translate(394,386)">
+          <rect width="149" height="32" rx="6" fill="#2B3139"/>
+          <text x="74.5" y="21" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#EAECEF">Edge in Numbers</text>
         </g>
   
-        <g transform="translate(0,440)">
-          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-                font-size="15" font-weight="600" fill="#a8c4ef">Risk Appetite</text>
-          <rect x="214" y="0" width="400" height="12" rx="6"
-                fill="#eef4ff" fill-opacity="0.12"/>
-          <rect x="214" y="0" width="200" height="12" rx="6"
-                fill="#5aa8ff"/>
-          <text x="614" y="12" text-anchor="end"
-                font-family="'DejaVu Sans',monospace" font-size="13"
-                font-weight="700" fill="#eef4ff">50</text>
+        <g transform="translate(0,448)">
+          <text x="40" y="10" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Risk Appetite</text>
+          <rect x="190" y="0" width="388" height="10" rx="5" fill="#2B3139"/>
+          <rect x="190" y="0" width="194" height="10" rx="5" fill="#FCD535"/>
+          <text x="620" y="10" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EAECEF">50</text>
         </g>
-        <g transform="translate(0,480)">
-          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-                font-size="15" font-weight="600" fill="#a8c4ef">Patience</text>
-          <rect x="214" y="0" width="400" height="12" rx="6"
-                fill="#eef4ff" fill-opacity="0.12"/>
-          <rect x="214" y="0" width="260" height="12" rx="6"
-                fill="#5aa8ff"/>
-          <text x="614" y="12" text-anchor="end"
-                font-family="'DejaVu Sans',monospace" font-size="13"
-                font-weight="700" fill="#eef4ff">65</text>
+        <g transform="translate(0,486)">
+          <text x="40" y="10" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Patience</text>
+          <rect x="190" y="0" width="388" height="10" rx="5" fill="#2B3139"/>
+          <rect x="190" y="0" width="252" height="10" rx="5" fill="#FCD535"/>
+          <text x="620" y="10" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EAECEF">65</text>
         </g>
-        <g transform="translate(0,520)">
-          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-                font-size="15" font-weight="600" fill="#a8c4ef">Time Horizon</text>
-          <rect x="214" y="0" width="400" height="12" rx="6"
-                fill="#eef4ff" fill-opacity="0.12"/>
-          <rect x="214" y="0" width="200" height="12" rx="6"
-                fill="#5aa8ff"/>
-          <text x="614" y="12" text-anchor="end"
-                font-family="'DejaVu Sans',monospace" font-size="13"
-                font-weight="700" fill="#eef4ff">50</text>
+        <g transform="translate(0,524)">
+          <text x="40" y="10" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Time Horizon</text>
+          <rect x="190" y="0" width="388" height="10" rx="5" fill="#2B3139"/>
+          <rect x="190" y="0" width="194" height="10" rx="5" fill="#FCD535"/>
+          <text x="620" y="10" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EAECEF">50</text>
         </g>
-        <g transform="translate(0,560)">
-          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-                font-size="15" font-weight="600" fill="#a8c4ef">Activity</text>
-          <rect x="214" y="0" width="400" height="12" rx="6"
-                fill="#eef4ff" fill-opacity="0.12"/>
-          <rect x="214" y="0" width="340" height="12" rx="6"
-                fill="#5aa8ff"/>
-          <text x="614" y="12" text-anchor="end"
-                font-family="'DejaVu Sans',monospace" font-size="13"
-                font-weight="700" fill="#eef4ff">85</text>
+        <g transform="translate(0,562)">
+          <text x="40" y="10" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Activity</text>
+          <rect x="190" y="0" width="388" height="10" rx="5" fill="#2B3139"/>
+          <rect x="190" y="0" width="330" height="10" rx="5" fill="#FCD535"/>
+          <text x="620" y="10" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EAECEF">85</text>
         </g>
         <g transform="translate(0,600)">
-          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
-                font-size="15" font-weight="600" fill="#a8c4ef">Conviction</text>
-          <rect x="214" y="0" width="400" height="12" rx="6"
-                fill="#eef4ff" fill-opacity="0.12"/>
-          <rect x="214" y="0" width="352" height="12" rx="6"
-                fill="#5aa8ff"/>
-          <text x="614" y="12" text-anchor="end"
-                font-family="'DejaVu Sans',monospace" font-size="13"
-                font-weight="700" fill="#eef4ff">88</text>
+          <text x="40" y="10" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="500" fill="#848E9C">Conviction</text>
+          <rect x="190" y="0" width="388" height="10" rx="5" fill="#2B3139"/>
+          <rect x="190" y="0" width="341" height="10" rx="5" fill="#FCD535"/>
+          <text x="620" y="10" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#EAECEF">88</text>
         </g>
-  <text x="330" y="668" text-anchor="middle"
-           font-family="'DejaVu Serif','Georgia',serif" font-style="italic"
-           font-size="17" fill="#a8c4ef">“I don&#39;t have opinions. I have a tested</text><text x="330" y="692" text-anchor="middle"
-           font-family="'DejaVu Serif','Georgia',serif" font-style="italic"
-           font-size="17" fill="#a8c4ef">expectancy.”</text>
-  <text x="330" y="850" text-anchor="middle"
-         font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="13"
-         letter-spacing="2" fill="#a8c4ef">ISSUED TO · DEMO TRADER</text>
-
-  <!-- footer -->
-  <text x="330" y="882" text-anchor="middle"
-        font-family="'DejaVu Sans',monospace" font-size="12" letter-spacing="3"
-        fill="#a8c4ef" opacity="0.8">gstack · TRADING PERSONA</text>
+  <text x="330" y="656" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-style="italic" font-size="15" fill="#848E9C">“I don&#39;t have opinions. I have a tested</text><text x="330" y="678" text-anchor="middle" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-style="italic" font-size="15" fill="#848E9C">expectancy.”</text>
+  
+  
+    <line x1="40" y1="852" x2="620" y2="852" stroke="#2B3139" stroke-width="1"/>
+    
+    <g>
+      <rect x="-3.50" y="-3.50" width="7" height="7" rx="1.26" transform="translate(49.00,863.15) rotate(45)" fill="#FCD535"/>
+      <rect x="-3.50" y="-3.50" width="7" height="7" rx="1.26" transform="translate(49.00,884.85) rotate(45)" fill="#FCD535"/>
+      <rect x="-3.50" y="-3.50" width="7" height="7" rx="1.26" transform="translate(38.15,874.00) rotate(45)" fill="#FCD535"/>
+      <rect x="-3.50" y="-3.50" width="7" height="7" rx="1.26" transform="translate(59.85,874.00) rotate(45)" fill="#FCD535"/>
+      <rect x="-3.50" y="-3.50" width="7" height="7" rx="1.26" transform="translate(49.00,874.00) rotate(45)" fill="#FCD535"/>
+    </g>
+    <text x="66" y="879" font-family="'DejaVu Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#EAECEF">BINANCE</text>
+    <text x="620" y="879" text-anchor="end" font-family="'DejaVu Sans Mono',monospace" font-size="11" letter-spacing="2" fill="#848E9C">TRADING PERSONA</text>
 </svg>

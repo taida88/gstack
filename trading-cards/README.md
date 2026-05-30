@@ -1,13 +1,24 @@
 # Trading Persona Cards
 
-Generate collectible-style **persona cards** for predefined trader archetypes —
+Generate **Binance-app-styled** persona cards for predefined trader archetypes —
 shareable graphics that capture each trading style's temperament, traits, and
-stat profile.
+stat profile, dressed in Binance's design language.
 
 Each card renders as a standalone **SVG** (no browser required) and can be
 rasterized to **PNG** via Playwright (already a gstack dependency).
 
-![day trader card](./out/day-trader.svg)
+![hodler card](./out/hodler.svg)
+
+## Design language
+
+Cards mirror the **Binance mobile app**:
+
+- Near-black surfaces — `#181A20` page, `#1E2026` card, `#2B3139` chips
+- Binance yellow brand — `#FCD535` / `#F0B90B` for the logo, accent rule, and stat bars
+- Market semantics — up = green `#0ECB81`, down = red `#F6465D`
+- A trading-pair header (`TICKER/USDT`), a 24h-change badge, and a seeded
+  candlestick spark
+- The Binance four-diamond logo mark + `BINANCE` wordmark in the footer
 
 ## Quick start
 
@@ -42,16 +53,16 @@ the SVGs and prints a hint (`bunx playwright install chromium`).
 
 ## Archetypes
 
-| Sigil | Archetype              | Style                                  |
-| ----- | ---------------------- | -------------------------------------- |
-| 📈    | The Day Trader         | Intraday, flat by the close            |
-| ⚡    | The Scalper            | Sub-minute, hundreds of tiny wins      |
-| 🌊    | The Swing Trader       | Multi-day trends and pullbacks         |
-| 🚀    | The Momentum Trader    | Breakouts, relative strength           |
-| 🎯    | The Contrarian         | Mean reversion, buys the panic         |
-| 🤖    | The Quant              | Systematic, backtested, emotionless    |
-| 💎    | The HODLer             | Diamond hands, max conviction          |
-| 🏛️    | The Long-Term Investor | Fundamentals, compounding, buy & hold  |
+| Glyph | Pair        | Archetype              | Style                                  |
+| ----- | ----------- | ---------------------- | -------------------------------------- |
+| 📈    | DAYT/USDT   | The Day Trader         | Intraday, flat by the close            |
+| ⚡    | SCLP/USDT   | The Scalper            | Sub-minute, hundreds of tiny wins      |
+| 🌊    | SWNG/USDT   | The Swing Trader       | Multi-day trends and pullbacks         |
+| 🚀    | MOMO/USDT   | The Momentum Trader    | Breakouts, relative strength           |
+| 🎯    | CNTR/USDT   | The Contrarian         | Mean reversion, buys the panic         |
+| 🤖    | QNT/USDT    | The Quant              | Systematic, backtested, emotionless    |
+| 💎    | HODL/USDT   | The HODLer             | Diamond hands, max conviction          |
+| 🏛️    | LONG/USDT   | The Long-Term Investor | Fundamentals, compounding, buy & hold  |
 
 Every persona is scored on five axes (0–100): **Risk Appetite, Patience,
 Time Horizon, Activity, Conviction** — rendered as stat bars on the card.
