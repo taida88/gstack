@@ -1,9 +1,9 @@
 /**
- * Predefined trading-persona archetypes.
+ * Predefined trading-persona archetypes — Binance-app styled.
  *
  * Each archetype is a self-contained description of a recognizable trader
- * "type" — its temperament, its edge, and a set of normalized stats (0–100)
- * that drive the visual stat-bars on the generated card.
+ * "type" rendered as a Binance-style asset card: a trading pair, a 24h change
+ * badge, a candlestick spark, and a set of normalized stats (0–100).
  *
  * This data is the single source of truth for the card generator. Add a new
  * archetype here and it automatically gets a card.
@@ -16,18 +16,8 @@ export interface PersonaStat {
   value: number;
 }
 
-export interface PersonaTheme {
-  /** Top gradient stop (hex). */
-  from: string;
-  /** Bottom gradient stop (hex). */
-  to: string;
-  /** Accent used for bars, chips, and rules (hex). */
-  accent: string;
-  /** Primary text color (hex). */
-  ink: string;
-  /** Muted/secondary text color (hex). */
-  muted: string;
-}
+/** Market sentiment — drives candle bias and the up/down (green/red) coloring. */
+export type Sentiment = "bull" | "bear" | "neutral";
 
 export type Rarity = "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary";
 
@@ -38,12 +28,16 @@ export interface Persona {
   name: string;
   /** One-line subtitle under the name. */
   tagline: string;
-  /** Single emoji used as the card's sigil. */
+  /** 3–5 char ticker symbol, Binance-style (paired with USDT on the card). */
+  ticker: string;
+  /** Synthetic "24h change" percentage; sign drives green/up vs red/down. */
+  change: number;
+  /** Single emoji used as the asset glyph. */
   glyph: string;
-  /** Collectible-style rarity ribbon. */
+  /** Collectible-style rarity tag. */
   rarity: Rarity;
-  /** Color theme for the card. */
-  theme: PersonaTheme;
+  /** Candle/price-direction bias. */
+  sentiment: Sentiment;
   /** Short trait chips (3–4 work best). */
   traits: string[];
   /** Five normalized stats rendered as bars. */
@@ -70,9 +64,11 @@ export const PERSONAS: Persona[] = [
     id: "day-trader",
     name: "The Day Trader",
     tagline: "Flat by the closing bell",
+    ticker: "DAYT",
+    change: 0.42,
     glyph: "📈",
     rarity: "Uncommon",
-    theme: { from: "#2a0a0a", to: "#7a1f12", accent: "#ff5a3c", ink: "#fff4f0", muted: "#f0b3a4" },
+    sentiment: "neutral",
     traits: ["Intraday", "High Tempo", "Charts > Sleep", "Tight Stops"],
     stats: stats({
       "Risk Appetite": 82,
@@ -87,9 +83,11 @@ export const PERSONAS: Persona[] = [
     id: "scalper",
     name: "The Scalper",
     tagline: "A hundred small wins a day",
+    ticker: "SCLP",
+    change: 0.18,
     glyph: "⚡",
     rarity: "Rare",
-    theme: { from: "#05210f", to: "#0f7a3a", accent: "#39ff88", ink: "#effff5", muted: "#9be8bd" },
+    sentiment: "bull",
     traits: ["Sub-Minute", "Order Flow", "Max Frequency", "Tiny Edge"],
     stats: stats({
       "Risk Appetite": 70,
@@ -104,9 +102,11 @@ export const PERSONAS: Persona[] = [
     id: "swing-trader",
     name: "The Swing Trader",
     tagline: "Riding the multi-day wave",
+    ticker: "SWNG",
+    change: 6.40,
     glyph: "🌊",
     rarity: "Common",
-    theme: { from: "#04212b", to: "#0e6b86", accent: "#34d3ff", ink: "#eefcff", muted: "#9bdcef" },
+    sentiment: "bull",
     traits: ["Multi-Day", "Trend + Pullback", "Balanced", "Setup-Driven"],
     stats: stats({
       "Risk Appetite": 58,
@@ -121,9 +121,11 @@ export const PERSONAS: Persona[] = [
     id: "momentum-trader",
     name: "The Momentum Trader",
     tagline: "Buy high, sell higher",
+    ticker: "MOMO",
+    change: 24.70,
     glyph: "🚀",
     rarity: "Rare",
-    theme: { from: "#2a0726", to: "#a01e6e", accent: "#ff48b0", ink: "#fff0fa", muted: "#f3a9d6" },
+    sentiment: "bull",
     traits: ["Breakouts", "Relative Strength", "Cut Losers Fast", "Let Winners Run"],
     stats: stats({
       "Risk Appetite": 80,
@@ -138,9 +140,11 @@ export const PERSONAS: Persona[] = [
     id: "contrarian",
     name: "The Contrarian",
     tagline: "Greedy when others are fearful",
+    ticker: "CNTR",
+    change: -8.30,
     glyph: "🎯",
     rarity: "Epic",
-    theme: { from: "#1c1606", to: "#6b4a0e", accent: "#ffc24d", ink: "#fff8e8", muted: "#e8cf95" },
+    sentiment: "bear",
     traits: ["Mean Reversion", "Buys Panic", "Iron Stomach", "Patient Capital"],
     stats: stats({
       "Risk Appetite": 68,
@@ -155,9 +159,11 @@ export const PERSONAS: Persona[] = [
     id: "quant",
     name: "The Quant",
     tagline: "Trust the model, not the mood",
+    ticker: "QNT",
+    change: 1.32,
     glyph: "🤖",
     rarity: "Epic",
-    theme: { from: "#060c1c", to: "#16356e", accent: "#5aa8ff", ink: "#eef4ff", muted: "#a8c4ef" },
+    sentiment: "neutral",
     traits: ["Systematic", "Backtested", "No Emotion", "Edge in Numbers"],
     stats: stats({
       "Risk Appetite": 50,
@@ -172,9 +178,11 @@ export const PERSONAS: Persona[] = [
     id: "hodler",
     name: "The HODLer",
     tagline: "Diamond hands, zero exits",
+    ticker: "HODL",
+    change: 318.0,
     glyph: "💎",
     rarity: "Legendary",
-    theme: { from: "#150a2e", to: "#5a23a8", accent: "#b388ff", ink: "#f5efff", muted: "#cdb6f0" },
+    sentiment: "bull",
     traits: ["Conviction Bet", "Ignores Noise", "Long Horizon", "Volatility = Discount"],
     stats: stats({
       "Risk Appetite": 88,
@@ -189,9 +197,11 @@ export const PERSONAS: Persona[] = [
     id: "long-term-investor",
     name: "The Long-Term Investor",
     tagline: "Owning businesses, not tickers",
+    ticker: "LONG",
+    change: 1240.0,
     glyph: "🏛️",
     rarity: "Legendary",
-    theme: { from: "#0a1322", to: "#163a5e", accent: "#e8c25a", ink: "#f4f8ff", muted: "#b6c8e0" },
+    sentiment: "bull",
     traits: ["Fundamentals", "Compounding", "Buy & Hold", "Margin of Safety"],
     stats: stats({
       "Risk Appetite": 32,
