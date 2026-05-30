@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="924" viewBox="0 0 660 924">
+  <defs>
+    <linearGradient id="g-hodler" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#150a2e"/>
+      <stop offset="1" stop-color="#5a23a8"/>
+    </linearGradient>
+    <radialGradient id="s-hodler" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#b388ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#b388ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- card body -->
+  <rect x="6" y="6" width="648" height="912" rx="34" fill="url(#g-hodler)"/>
+  <rect x="6" y="6" width="648" height="912" rx="34"
+        fill="none" stroke="#b388ff" stroke-opacity="0.6" stroke-width="2.5"/>
+  <rect x="18" y="18" width="624" height="888" rx="26"
+        fill="none" stroke="#f5efff" stroke-opacity="0.10" stroke-width="1"/>
+
+  <!-- sigil glow + glyph -->
+  <circle cx="92" cy="98" r="70" fill="url(#s-hodler)"/>
+  <text x="48" y="124" font-size="74">💎</text>
+
+  
+    <g transform="translate(482,40)">
+      <rect width="132" height="30" rx="15" fill="#b388ff" fill-opacity="0.18"
+            stroke="#b388ff" stroke-width="1.4"/>
+      <text x="66" y="20" text-anchor="middle"
+            font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="13"
+            font-weight="800" letter-spacing="2" fill="#f5efff">LEGENDARY</text>
+    </g>
+
+  <!-- name + tagline -->
+  <text x="46" y="196" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+        font-size="38" font-weight="800" fill="#f5efff">The HODLer</text>
+  <text x="46" y="228" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+        font-size="18" font-weight="500" fill="#cdb6f0">Diamond hands, zero exits</text>
+  <line x1="46" y1="248" x2="614" y2="248"
+        stroke="#b388ff" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  
+        <g transform="translate(46,370)">
+          <rect width="146" height="34" rx="17"
+                fill="#b388ff" fill-opacity="0.14"
+                stroke="#b388ff" stroke-opacity="0.55" stroke-width="1.2"/>
+          <text x="73" y="22" text-anchor="middle"
+                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
+                font-weight="600" fill="#f5efff">Conviction Bet</text>
+        </g>
+        <g transform="translate(204,370)">
+          <rect width="137" height="34" rx="17"
+                fill="#b388ff" fill-opacity="0.14"
+                stroke="#b388ff" stroke-opacity="0.55" stroke-width="1.2"/>
+          <text x="68.5" y="22" text-anchor="middle"
+                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
+                font-weight="600" fill="#f5efff">Ignores Noise</text>
+        </g>
+        <g transform="translate(353,370)">
+          <rect width="129" height="34" rx="17"
+                fill="#b388ff" fill-opacity="0.14"
+                stroke="#b388ff" stroke-opacity="0.55" stroke-width="1.2"/>
+          <text x="64.5" y="22" text-anchor="middle"
+                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
+                font-weight="600" fill="#f5efff">Long Horizon</text>
+        </g>
+        <g transform="translate(46,416)">
+          <rect width="204" height="34" rx="17"
+                fill="#b388ff" fill-opacity="0.14"
+                stroke="#b388ff" stroke-opacity="0.55" stroke-width="1.2"/>
+          <text x="102" y="22" text-anchor="middle"
+                font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="15"
+                font-weight="600" fill="#f5efff">Volatility = Discount</text>
+        </g>
+  
+        <g transform="translate(0,486)">
+          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+                font-size="15" font-weight="600" fill="#cdb6f0">Risk Appetite</text>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#f5efff" fill-opacity="0.12"/>
+          <rect x="214" y="0" width="352" height="12" rx="6"
+                fill="#b388ff"/>
+          <text x="614" y="12" text-anchor="end"
+                font-family="'DejaVu Sans',monospace" font-size="13"
+                font-weight="700" fill="#f5efff">88</text>
+        </g>
+        <g transform="translate(0,526)">
+          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+                font-size="15" font-weight="600" fill="#cdb6f0">Patience</text>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#f5efff" fill-opacity="0.12"/>
+          <rect x="214" y="0" width="384" height="12" rx="6"
+                fill="#b388ff"/>
+          <text x="614" y="12" text-anchor="end"
+                font-family="'DejaVu Sans',monospace" font-size="13"
+                font-weight="700" fill="#f5efff">96</text>
+        </g>
+        <g transform="translate(0,566)">
+          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+                font-size="15" font-weight="600" fill="#cdb6f0">Time Horizon</text>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#f5efff" fill-opacity="0.12"/>
+          <rect x="214" y="0" width="368" height="12" rx="6"
+                fill="#b388ff"/>
+          <text x="614" y="12" text-anchor="end"
+                font-family="'DejaVu Sans',monospace" font-size="13"
+                font-weight="700" fill="#f5efff">92</text>
+        </g>
+        <g transform="translate(0,606)">
+          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+                font-size="15" font-weight="600" fill="#cdb6f0">Activity</text>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#f5efff" fill-opacity="0.12"/>
+          <rect x="214" y="0" width="56" height="12" rx="6"
+                fill="#b388ff"/>
+          <text x="614" y="12" text-anchor="end"
+                font-family="'DejaVu Sans',monospace" font-size="13"
+                font-weight="700" fill="#f5efff">14</text>
+        </g>
+        <g transform="translate(0,646)">
+          <text x="46" y="12" font-family="'DejaVu Sans','Segoe UI',sans-serif"
+                font-size="15" font-weight="600" fill="#cdb6f0">Conviction</text>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#f5efff" fill-opacity="0.12"/>
+          <rect x="214" y="0" width="400" height="12" rx="6"
+                fill="#b388ff"/>
+          <text x="614" y="12" text-anchor="end"
+                font-family="'DejaVu Sans',monospace" font-size="13"
+                font-weight="700" fill="#f5efff">100</text>
+        </g>
+  <text x="330" y="714" text-anchor="middle"
+           font-family="'DejaVu Serif','Georgia',serif" font-style="italic"
+           font-size="17" fill="#cdb6f0">“Time in the market. The chart is a</text><text x="330" y="738" text-anchor="middle"
+           font-family="'DejaVu Serif','Georgia',serif" font-style="italic"
+           font-size="17" fill="#cdb6f0">rounding error to me.”</text>
+  <text x="330" y="850" text-anchor="middle"
+         font-family="'DejaVu Sans','Segoe UI',sans-serif" font-size="13"
+         letter-spacing="2" fill="#cdb6f0">ISSUED TO · DEMO TRADER</text>
+
+  <!-- footer -->
+  <text x="330" y="882" text-anchor="middle"
+        font-family="'DejaVu Sans',monospace" font-size="12" letter-spacing="3"
+        fill="#cdb6f0" opacity="0.8">gstack · TRADING PERSONA</text>
+</svg>
